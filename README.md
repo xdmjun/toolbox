@@ -6,18 +6,17 @@
 
 ```
 skills/
-├── .agents/skills/              # baoyu 系列技能
-│   ├── visual-creation/         # 视觉创作
-│   ├── content-processing/      # 内容处理
-│   ├── web-scraping/            # 网页抓取
-│   ├── social-publish/          # 社交发布
-│   └── dev-tools/               # 开发工具
-│
-├── development-workflow/        # 开发流程
-├── code-quality/                # 代码质量
-├── architecture-design/         # 架构设计
-├── ai-productivity/             # AI 效率
-└── dev-tools/                   # 开发工具
+├── visual-creation/             # 视觉创作 (8个)
+├── content-processing/          # 内容处理 (4个)
+├── web-scraping/                # 网页抓取 (4个)
+├── social-publish/              # 社交发布 (4个)
+├── development-workflow/        # 开发流程 (7个)
+├── code-quality/                # 代码质量 (6个)
+├── architecture-design/         # 架构设计 (3个)
+├── ai-productivity/             # AI 效率 (5个)
+├── dev-tools/                   # 开发工具 (4个)
+├── skills-manifest.json         # 技能清单
+└── skills-lock.json             # 技能锁文件
 ```
 
 ## 技能分类详情
