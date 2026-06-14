@@ -12,7 +12,7 @@ skills/
 ├── social-publish/              # 社交发布 (4个)
 ├── development-workflow/        # 开发流程 (7个)
 ├── code-quality/                # 代码质量 (6个)
-├── architecture-design/         # 架构设计 (3个)
+├── architecture-design/         # 架构设计 (4个)
 ├── ai-productivity/             # AI 效率 (5个)
 ├── dev-tools/                   # 开发工具 (4个)
 ├── skills-manifest.json         # 技能清单
@@ -89,6 +89,7 @@ skills/
 | 技能 | 说明 |
 |------|------|
 | architect-thinking | 架构思维 |
+| architecture-analyzer | 架构分析 |
 | database-design | 数据库设计 |
 | ui-ux-pro-max | UI/UX 设计 |
 
@@ -113,7 +114,7 @@ skills/
 
 ## 统计
 
-- **总技能数**: 45 个
+- **总技能数**: 46 个
 - **分类数**: 9 个
 
 ## 使用说明

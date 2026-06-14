@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
   "updated": "2026-06-14",
-  "totalSkills": 45,
+  "totalSkills": 46,
   "categories": [
     {
       "id": "visual-creation",
@@ -265,6 +265,12 @@
           "name": "UI/UX 设计",
           "path": "architecture-design/ui-ux-pro-max",
           "description": "UI/UX 设计系统，支持多框架（React、Vue、Flutter 等）"
+        },
+        {
+          "id": "architecture-analyzer",
+          "name": "架构分析",
+          "path": "architecture-design/architecture-analyzer",
+          "description": "分析项目架构，生成项目画像和架构报告"
         }
       ]
     },
