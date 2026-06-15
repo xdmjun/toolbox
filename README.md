@@ -10,7 +10,7 @@ skills/
 ├── content-processing/          # 内容处理 (4个)
 ├── web-scraping/                # 网页抓取 (4个)
 ├── social-publish/              # 社交发布 (4个)
-├── development-workflow/        # 开发流程 (7个)
+├── development-workflow/        # 开发流程 (8个)
 ├── code-quality/                # 代码质量 (6个)
 ├── architecture-design/         # 架构设计 (4个)
 ├── ai-productivity/             # AI 效率 (5个)
@@ -72,6 +72,7 @@ skills/
 | planning-with-files | 文件规划 |
 | subagent-driven-development | 子 Agent 驱动开发 |
 | writing-plans | 编写计划 |
+| ralph-wiggum | 规格驱动开发 |
 
 ### 代码质量 (code-quality)
 
@@ -114,7 +115,7 @@ skills/
 
 ## 统计
 
-- **总技能数**: 46 个
+- **总技能数**: 47 个
 - **分类数**: 9 个
 
 ## 使用说明

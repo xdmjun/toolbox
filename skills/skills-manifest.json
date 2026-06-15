@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
   "updated": "2026-06-14",
-  "totalSkills": 46,
+  "totalSkills": 47,
   "categories": [
     {
       "id": "visual-creation",
@@ -197,6 +197,12 @@
           "name": "编写计划",
           "path": "development-workflow/writing-plans",
           "description": "编写详细的开发计划文档"
+        },
+        {
+          "id": "ralph-wiggum",
+          "name": "规格驱动开发",
+          "path": "development-workflow/ralph-wiggum",
+          "description": "规格驱动的自主 AI 编码，按规格迭代开发直到验收标准 100% 满足"
         }
       ]
     },
