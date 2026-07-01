@@ -13,8 +13,8 @@ skills/
 ├── development-workflow/        # 开发流程 (8个)
 ├── code-quality/                # 代码质量 (6个)
 ├── architecture-design/         # 架构设计 (4个)
-├── ai-productivity/             # AI 效率 (5个)
-├── dev-tools/                   # 开发工具 (4个)
+├── ai-productivity/             # AI 效率 (6个)
+├── dev-tools/                   # 开发工具 (3个)
 ├── skills-manifest.json         # 技能清单
 └── skills-lock.json             # 技能锁文件
 ```
@@ -101,6 +101,7 @@ skills/
 | ai-frontier-observer | AI 前沿观察 |
 | ai-native-entrepreneurship | AI 原生创业 |
 | humanizer-zh | 中文人性化 |
+| indie-maker-revenue-path | 独立开发者收入路径 |
 | using-superpowers | 使用超级能力 |
 | writing-skills | 写作技巧 |
 
