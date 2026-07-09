@@ -1,3 +1,122 @@
+<!-- AUTO-GENERATED-START -->
+# Toolbox · AI Skills 仓库
+
+> 自动生成于 2026-07-09 · 共 **48** 个技能 / **9** 个分类。
+> 本文件目录部分为自动生成（AUTO 块），下方介绍为手写，请勿在 AUTO 块内手改。
+
+## 分类索引
+
+| 分类 | 中文名 | 技能数 |
+|------|--------|--------|
+| [ai-productivity](skills/ai-productivity/README.md) | AI 效率 | 6 |
+| [architecture-design](skills/architecture-design/README.md) | 架构设计 | 4 |
+| [code-quality](skills/code-quality/README.md) | 代码质量 | 6 |
+| [content-processing](skills/content-processing/README.md) | 内容处理 | 4 |
+| [dev-tools](skills/dev-tools/README.md) | 开发工具 | 4 |
+| [development-workflow](skills/development-workflow/README.md) | 开发流程 | 8 |
+| [social-publish](skills/social-publish/README.md) | 社交发布 | 4 |
+| [visual-creation](skills/visual-creation/README.md) | 视觉创作 | 8 |
+| [web-scraping](skills/web-scraping/README.md) | 网页抓取 | 4 |
+
+## 全部技能（按分类）
+
+### AI 效率（`ai-productivity`）
+
+| 技能 | 中文名 | 说明 |
+|------|--------|------|
+| [ai-frontier-observer](skills/ai-productivity/ai-frontier-observer/SKILL.md) | AI 前沿观察 | AI前沿观察 - 追踪 Karpathy、Mollick、Andrew Ng、J… |
+| [ai-native-entrepreneurship](skills/ai-productivity/ai-native-entrepreneurship/SKILL.md) | AI 原生创业 | 基于YC、Anthropic创始人手册和AI原生公司理念，指导创业方向、产品思路… |
+| [humanizer-zh](skills/ai-productivity/humanizer-zh/SKILL.md) | 中文人性化 | 去除文本中的 AI 生成痕迹。适用于编辑或审阅文本，使其听起来更自然、更像人类书… |
+| [indie-maker-revenue-path](skills/ai-productivity/indie-maker-revenue-path/SKILL.md) | indie-maker-revenue-path | 基于独立开发者从 $0 到月入万刀的真实路径，提供收入阶段诊断（$0/$100/… |
+| [using-superpowers](skills/ai-productivity/using-superpowers/SKILL.md) | 超级能力 | Use when starting any conversation - est… |
+| [writing-skills](skills/ai-productivity/writing-skills/SKILL.md) | 写作技巧 | Use when creating new skills, editing ex… |
+
+### 架构设计（`architecture-design`）
+
+| 技能 | 中文名 | 说明 |
+|------|--------|------|
+| [architect-thinking](skills/architecture-design/architect-thinking/SKILL.md) | 架构思维 | 系统架构师的5层思维能力框架。当进行架构设计、技术选型、系统重构或需要评估架构决… |
+| [architecture-analyzer](skills/architecture-design/architecture-analyzer/SKILL.md) | 架构分析 | Analyzes project architecture across 5 d… |
+| [database-design](skills/architecture-design/database-design/SKILL.md) | 数据库设计 | Database design principles and decision-… |
+| [ui-ux-pro-max](skills/architecture-design/ui-ux-pro-max/SKILL.md) | UI/UX 设计 | UI/UX design intelligence. 50 styles, 21… |
+
+### 代码质量（`code-quality`）
+
+| 技能 | 中文名 | 说明 |
+|------|--------|------|
+| [code-reviewer](skills/code-quality/code-reviewer/SKILL.md) | 代码审查 | Use this skill to review code. It suppor… |
+| [receiving-code-review](skills/code-quality/receiving-code-review/SKILL.md) | 接收审查 | Use when receiving code review feedback,… |
+| [requesting-code-review](skills/code-quality/requesting-code-review/SKILL.md) | 请求审查 | Use when completing tasks, implementing … |
+| [systematic-debugging](skills/code-quality/systematic-debugging/SKILL.md) | 系统调试 | Use when encountering any bug, test fail… |
+| [test-driven-development](skills/code-quality/test-driven-development/SKILL.md) | TDD | Use when implementing any feature or bug… |
+| [verification-before-completion](skills/code-quality/verification-before-completion/SKILL.md) | 完成前验证 | Use when about to claim work is complete… |
+
+### 内容处理（`content-processing`）
+
+| 技能 | 中文名 | 说明 |
+|------|--------|------|
+| [baoyu-format-markdown](skills/content-processing/baoyu-format-markdown/SKILL.md) | Markdown 格式化 | Formats plain text or markdown files wit… |
+| [baoyu-markdown-to-html](skills/content-processing/baoyu-markdown-to-html/SKILL.md) | Markdown 转 HTML | Converts Markdown to styled HTML with We… |
+| [baoyu-translate](skills/content-processing/baoyu-translate/SKILL.md) | 翻译 | This skill should be used when the user … |
+| [baoyu-wechat-summary](skills/content-processing/baoyu-wechat-summary/SKILL.md) | 微信文章摘要 | Summarizes WeChat group chat highlights … |
+
+### 开发工具（`dev-tools`）
+
+| 技能 | 中文名 | 说明 |
+|------|--------|------|
+| [baoyu-electron-extract](skills/dev-tools/baoyu-electron-extract/SKILL.md) | Electron 提取 | Extracts resources and JavaScript from a… |
+| [chrome-cdp-live-browser](skills/dev-tools/chrome-cdp-live-browser/SKILL.md) | Chrome CDP | Give AI agents access to your live Chrom… |
+| [frontend-design](skills/dev-tools/frontend-design/SKILL.md) | 前端设计 | Guidance for distinctive, intentional vi… |
+| [using-git-worktrees](skills/dev-tools/using-git-worktrees/SKILL.md) | Git Worktrees | Use when starting feature work that need… |
+
+### 开发流程（`development-workflow`）
+
+| 技能 | 中文名 | 说明 |
+|------|--------|------|
+| [brainstorming](skills/development-workflow/brainstorming/SKILL.md) | 头脑风暴 | You MUST use this before any creative wo… |
+| [dispatching-parallel-agents](skills/development-workflow/dispatching-parallel-agents/SKILL.md) | 并行 Agent | Use when facing 2+ independent tasks tha… |
+| [executing-plans](skills/development-workflow/executing-plans/SKILL.md) | 执行计划 | Use when you have a written implementati… |
+| [finishing-a-development-branch](skills/development-workflow/finishing-a-development-branch/SKILL.md) | 完成分支 | Use when implementation is complete, all… |
+| [planning-with-files](skills/development-workflow/planning-with-files/SKILL.md) | 文件规划 | Implements Manus-style file-based planni… |
+| [ralph-wiggum](skills/development-workflow/ralph-wiggum/SKILL.md) | 规格驱动开发 | Autonomous AI coding with spec-driven de… |
+| [subagent-driven-development](skills/development-workflow/subagent-driven-development/SKILL.md) | 子 Agent 开发 | Use when executing implementation plans … |
+| [writing-plans](skills/development-workflow/writing-plans/SKILL.md) | 编写计划 | Use when you have a spec or requirements… |
+
+### 社交发布（`social-publish`）
+
+| 技能 | 中文名 | 说明 |
+|------|--------|------|
+| [baoyu-post-to-wechat](skills/social-publish/baoyu-post-to-wechat/SKILL.md) | 微信发布 | Posts content to WeChat Official Account… |
+| [baoyu-post-to-weibo](skills/social-publish/baoyu-post-to-weibo/SKILL.md) | 微博发布 | Posts content to Weibo (微博). Supports re… |
+| [baoyu-post-to-x](skills/social-publish/baoyu-post-to-x/SKILL.md) | X 发布 | Posts content and articles to X (Twitter… |
+| [baoyu-xhs-images](skills/social-publish/baoyu-xhs-images/SKILL.md) | 小红书图文 | Generates infographic image card series … |
+
+### 视觉创作（`visual-creation`）
+
+| 技能 | 中文名 | 说明 |
+|------|--------|------|
+| [baoyu-article-illustrator](skills/visual-creation/baoyu-article-illustrator/SKILL.md) | 文章配图 | Analyzes article structure, identifies p… |
+| [baoyu-comic](skills/visual-creation/baoyu-comic/SKILL.md) | 漫画生成 | Knowledge comic creator supporting multi… |
+| [baoyu-compress-image](skills/visual-creation/baoyu-compress-image/SKILL.md) | 图片压缩 | Compresses images to WebP (default) or P… |
+| [baoyu-cover-image](skills/visual-creation/baoyu-cover-image/SKILL.md) | 封面图 | Generates article cover images with 5 di… |
+| [baoyu-diagram](skills/visual-creation/baoyu-diagram/SKILL.md) | 图表生成 | Create professional, dark-themed SVG dia… |
+| [baoyu-image-gen](skills/visual-creation/baoyu-image-gen/SKILL.md) | AI 图片生成 | AI image generation with OpenAI GPT Imag… |
+| [baoyu-infographic](skills/visual-creation/baoyu-infographic/SKILL.md) | 信息图 | Generate professional infographics with … |
+| [baoyu-slide-deck](skills/visual-creation/baoyu-slide-deck/SKILL.md) | 幻灯片 | Generates professional slide deck images… |
+
+### 网页抓取（`web-scraping`）
+
+| 技能 | 中文名 | 说明 |
+|------|--------|------|
+| [baoyu-danger-gemini-web](skills/web-scraping/baoyu-danger-gemini-web/SKILL.md) | Gemini Web | Generates images and text via reverse-en… |
+| [baoyu-danger-x-to-markdown](skills/web-scraping/baoyu-danger-x-to-markdown/SKILL.md) | X 转 Markdown | Converts X (Twitter) tweets and articles… |
+| [baoyu-url-to-markdown](skills/web-scraping/baoyu-url-to-markdown/SKILL.md) | URL 转 Markdown | Fetch any URL and convert to markdown us… |
+| [baoyu-youtube-transcript](skills/web-scraping/baoyu-youtube-transcript/SKILL.md) | YouTube 字幕 | Downloads YouTube video transcripts/subt… |
+
+
+<!-- AUTO-GENERATED-END -->
+
+<!-- HANDWRITTEN-START -->
 # Toolbox - Skills 技能库
 
 个人效率技能集合，按功能分类整理，用于 AI Agent 调用。
@@ -125,3 +244,4 @@ skills/
 - `SKILL.md` - 技能主文档
 - `references/` - 参考资料（可选）
 - `scripts/` - 脚本文件（可选）
+<!-- HANDWRITTEN-END -->

@@ -1,8 +1,273 @@
 {
   "version": "1.0.0",
-  "updated": "2026-06-14",
-  "totalSkills": 47,
+  "updated": "2026-07-09",
+  "totalSkills": 48,
   "categories": [
+    {
+      "id": "ai-productivity",
+      "name": "AI 效率",
+      "path": "ai-productivity",
+      "skills": [
+        {
+          "id": "ai-frontier-observer",
+          "name": "AI 前沿观察",
+          "path": "ai-productivity/ai-frontier-observer",
+          "description": "追踪 AI 领域最新进展和趋势"
+        },
+        {
+          "id": "ai-native-entrepreneurship",
+          "name": "AI 原生创业",
+          "path": "ai-productivity/ai-native-entrepreneurship",
+          "description": "AI 原生创业方法论和策略"
+        },
+        {
+          "id": "humanizer-zh",
+          "name": "中文人性化",
+          "path": "ai-productivity/humanizer-zh",
+          "description": "去除 AI 生成痕迹，使中文文本更自然"
+        },
+        {
+          "id": "indie-maker-revenue-path",
+          "name": "indie-maker-revenue-path",
+          "path": "ai-productivity/indie-maker-revenue-path",
+          "description": "基于独立开发者从 $0 到月入万刀的真实路径，提供收入阶段诊断（$0/$100/$1000/$3…"
+        },
+        {
+          "id": "using-superpowers",
+          "name": "超级能力",
+          "path": "ai-productivity/using-superpowers",
+          "description": "使用 Codex、Copilot、Gemini 等 AI 工具的高级技巧"
+        },
+        {
+          "id": "writing-skills",
+          "name": "写作技巧",
+          "path": "ai-productivity/writing-skills",
+          "description": "写作技能和说服力原则"
+        }
+      ]
+    },
+    {
+      "id": "architecture-design",
+      "name": "架构设计",
+      "path": "architecture-design",
+      "skills": [
+        {
+          "id": "architect-thinking",
+          "name": "架构思维",
+          "path": "architecture-design/architect-thinking",
+          "description": "架构设计思维模式和决策框架"
+        },
+        {
+          "id": "architecture-analyzer",
+          "name": "架构分析",
+          "path": "architecture-design/architecture-analyzer",
+          "description": "分析项目架构，生成项目画像和架构报告"
+        },
+        {
+          "id": "database-design",
+          "name": "数据库设计",
+          "path": "architecture-design/database-design",
+          "description": "数据库选型、Schema 设计、索引优化、迁移策略"
+        },
+        {
+          "id": "ui-ux-pro-max",
+          "name": "UI/UX 设计",
+          "path": "architecture-design/ui-ux-pro-max",
+          "description": "UI/UX 设计系统，支持多框架（React、Vue、Flutter 等）"
+        }
+      ]
+    },
+    {
+      "id": "code-quality",
+      "name": "代码质量",
+      "path": "code-quality",
+      "skills": [
+        {
+          "id": "code-reviewer",
+          "name": "代码审查",
+          "path": "code-quality/code-reviewer",
+          "description": "自动代码审查，检查质量和最佳实践"
+        },
+        {
+          "id": "receiving-code-review",
+          "name": "接收审查",
+          "path": "code-quality/receiving-code-review",
+          "description": "处理收到的代码审查反馈"
+        },
+        {
+          "id": "requesting-code-review",
+          "name": "请求审查",
+          "path": "code-quality/requesting-code-review",
+          "description": "向用户请求代码审查"
+        },
+        {
+          "id": "systematic-debugging",
+          "name": "系统调试",
+          "path": "code-quality/systematic-debugging",
+          "description": "系统化调试流程：假设→插桩→复现→分析→修复"
+        },
+        {
+          "id": "test-driven-development",
+          "name": "TDD",
+          "path": "code-quality/test-driven-development",
+          "description": "测试驱动开发流程"
+        },
+        {
+          "id": "verification-before-completion",
+          "name": "完成前验证",
+          "path": "code-quality/verification-before-completion",
+          "description": "在声称完成前运行验证命令确认结果"
+        }
+      ]
+    },
+    {
+      "id": "content-processing",
+      "name": "内容处理",
+      "path": "content-processing",
+      "skills": [
+        {
+          "id": "baoyu-format-markdown",
+          "name": "Markdown 格式化",
+          "path": "content-processing/baoyu-format-markdown",
+          "description": "格式化和规范化 Markdown 文档，自动纠正标点符号"
+        },
+        {
+          "id": "baoyu-markdown-to-html",
+          "name": "Markdown 转 HTML",
+          "path": "content-processing/baoyu-markdown-to-html",
+          "description": "将 Markdown 转换为 HTML，支持自定义样式"
+        },
+        {
+          "id": "baoyu-translate",
+          "name": "翻译",
+          "path": "content-processing/baoyu-translate",
+          "description": "多语言翻译，支持术语表和分块处理"
+        },
+        {
+          "id": "baoyu-wechat-summary",
+          "name": "微信文章摘要",
+          "path": "content-processing/baoyu-wechat-summary",
+          "description": "生成微信公众号文章摘要"
+        }
+      ]
+    },
+    {
+      "id": "dev-tools",
+      "name": "开发工具",
+      "path": "dev-tools",
+      "skills": [
+        {
+          "id": "baoyu-electron-extract",
+          "name": "Electron 提取",
+          "path": "dev-tools/baoyu-electron-extract",
+          "description": "从 Electron 应用中提取资源"
+        },
+        {
+          "id": "chrome-cdp-live-browser",
+          "name": "Chrome CDP",
+          "path": "dev-tools/chrome-cdp-live-browser",
+          "description": "通过 Chrome DevTools Protocol 控制浏览器"
+        },
+        {
+          "id": "frontend-design",
+          "name": "前端设计",
+          "path": "dev-tools/frontend-design",
+          "description": "前端设计技能和最佳实践"
+        },
+        {
+          "id": "using-git-worktrees",
+          "name": "Git Worktrees",
+          "path": "dev-tools/using-git-worktrees",
+          "description": "使用 Git Worktrees 进行隔离开发"
+        }
+      ]
+    },
+    {
+      "id": "development-workflow",
+      "name": "开发流程",
+      "path": "development-workflow",
+      "skills": [
+        {
+          "id": "brainstorming",
+          "name": "头脑风暴",
+          "path": "development-workflow/brainstorming",
+          "description": "结构化头脑风暴，生成想法和规格文档"
+        },
+        {
+          "id": "dispatching-parallel-agents",
+          "name": "并行 Agent",
+          "path": "development-workflow/dispatching-parallel-agents",
+          "description": "调度多个并行 Agent 执行独立任务"
+        },
+        {
+          "id": "executing-plans",
+          "name": "执行计划",
+          "path": "development-workflow/executing-plans",
+          "description": "按计划文件逐步执行开发任务"
+        },
+        {
+          "id": "finishing-a-development-branch",
+          "name": "完成分支",
+          "path": "development-workflow/finishing-a-development-branch",
+          "description": "完成开发分支的收尾工作（测试、文档、合并）"
+        },
+        {
+          "id": "planning-with-files",
+          "name": "文件规划",
+          "path": "development-workflow/planning-with-files",
+          "description": "基于文件的复杂任务规划，创建任务计划和进度跟踪"
+        },
+        {
+          "id": "ralph-wiggum",
+          "name": "规格驱动开发",
+          "path": "development-workflow/ralph-wiggum",
+          "description": "规格驱动的自主 AI 编码，按规格迭代开发直到验收标准 100% 满足"
+        },
+        {
+          "id": "subagent-driven-development",
+          "name": "子 Agent 开发",
+          "path": "development-workflow/subagent-driven-development",
+          "description": "使用子 Agent 驱动的开发流程"
+        },
+        {
+          "id": "writing-plans",
+          "name": "编写计划",
+          "path": "development-workflow/writing-plans",
+          "description": "编写详细的开发计划文档"
+        }
+      ]
+    },
+    {
+      "id": "social-publish",
+      "name": "社交发布",
+      "path": "social-publish",
+      "skills": [
+        {
+          "id": "baoyu-post-to-wechat",
+          "name": "微信发布",
+          "path": "social-publish/baoyu-post-to-wechat",
+          "description": "发布文章到微信公众号，支持远程 API 和浏览器方式"
+        },
+        {
+          "id": "baoyu-post-to-weibo",
+          "name": "微博发布",
+          "path": "social-publish/baoyu-post-to-weibo",
+          "description": "发布内容到微博"
+        },
+        {
+          "id": "baoyu-post-to-x",
+          "name": "X 发布",
+          "path": "social-publish/baoyu-post-to-x",
+          "description": "发布帖子/文章到 X (Twitter)"
+        },
+        {
+          "id": "baoyu-xhs-images",
+          "name": "小红书图文",
+          "path": "social-publish/baoyu-xhs-images",
+          "description": "生成小红书风格图文，支持多种预设风格"
+        }
+      ]
+    },
     {
       "id": "visual-creation",
       "name": "视觉创作",
@@ -59,37 +324,6 @@
       ]
     },
     {
-      "id": "content-processing",
-      "name": "内容处理",
-      "path": "content-processing",
-      "skills": [
-        {
-          "id": "baoyu-format-markdown",
-          "name": "Markdown 格式化",
-          "path": "content-processing/baoyu-format-markdown",
-          "description": "格式化和规范化 Markdown 文档，自动纠正标点符号"
-        },
-        {
-          "id": "baoyu-markdown-to-html",
-          "name": "Markdown 转 HTML",
-          "path": "content-processing/baoyu-markdown-to-html",
-          "description": "将 Markdown 转换为 HTML，支持自定义样式"
-        },
-        {
-          "id": "baoyu-translate",
-          "name": "翻译",
-          "path": "content-processing/baoyu-translate",
-          "description": "多语言翻译，支持术语表和分块处理"
-        },
-        {
-          "id": "baoyu-wechat-summary",
-          "name": "微信文章摘要",
-          "path": "content-processing/baoyu-wechat-summary",
-          "description": "生成微信公众号文章摘要"
-        }
-      ]
-    },
-    {
       "id": "web-scraping",
       "name": "网页抓取",
       "path": "web-scraping",
@@ -117,234 +351,6 @@
           "name": "YouTube 字幕",
           "path": "web-scraping/baoyu-youtube-transcript",
           "description": "提取 YouTube 视频字幕/转录文本"
-        }
-      ]
-    },
-    {
-      "id": "social-publish",
-      "name": "社交发布",
-      "path": "social-publish",
-      "skills": [
-        {
-          "id": "baoyu-post-to-wechat",
-          "name": "微信发布",
-          "path": "social-publish/baoyu-post-to-wechat",
-          "description": "发布文章到微信公众号，支持远程 API 和浏览器方式"
-        },
-        {
-          "id": "baoyu-post-to-weibo",
-          "name": "微博发布",
-          "path": "social-publish/baoyu-post-to-weibo",
-          "description": "发布内容到微博"
-        },
-        {
-          "id": "baoyu-post-to-x",
-          "name": "X 发布",
-          "path": "social-publish/baoyu-post-to-x",
-          "description": "发布帖子/文章到 X (Twitter)"
-        },
-        {
-          "id": "baoyu-xhs-images",
-          "name": "小红书图文",
-          "path": "social-publish/baoyu-xhs-images",
-          "description": "生成小红书风格图文，支持多种预设风格"
-        }
-      ]
-    },
-    {
-      "id": "development-workflow",
-      "name": "开发流程",
-      "path": "development-workflow",
-      "skills": [
-        {
-          "id": "brainstorming",
-          "name": "头脑风暴",
-          "path": "development-workflow/brainstorming",
-          "description": "结构化头脑风暴，生成想法和规格文档"
-        },
-        {
-          "id": "dispatching-parallel-agents",
-          "name": "并行 Agent",
-          "path": "development-workflow/dispatching-parallel-agents",
-          "description": "调度多个并行 Agent 执行独立任务"
-        },
-        {
-          "id": "executing-plans",
-          "name": "执行计划",
-          "path": "development-workflow/executing-plans",
-          "description": "按计划文件逐步执行开发任务"
-        },
-        {
-          "id": "finishing-a-development-branch",
-          "name": "完成分支",
-          "path": "development-workflow/finishing-a-development-branch",
-          "description": "完成开发分支的收尾工作（测试、文档、合并）"
-        },
-        {
-          "id": "planning-with-files",
-          "name": "文件规划",
-          "path": "development-workflow/planning-with-files",
-          "description": "基于文件的复杂任务规划，创建任务计划和进度跟踪"
-        },
-        {
-          "id": "subagent-driven-development",
-          "name": "子 Agent 开发",
-          "path": "development-workflow/subagent-driven-development",
-          "description": "使用子 Agent 驱动的开发流程"
-        },
-        {
-          "id": "writing-plans",
-          "name": "编写计划",
-          "path": "development-workflow/writing-plans",
-          "description": "编写详细的开发计划文档"
-        },
-        {
-          "id": "ralph-wiggum",
-          "name": "规格驱动开发",
-          "path": "development-workflow/ralph-wiggum",
-          "description": "规格驱动的自主 AI 编码，按规格迭代开发直到验收标准 100% 满足"
-        }
-      ]
-    },
-    {
-      "id": "code-quality",
-      "name": "代码质量",
-      "path": "code-quality",
-      "skills": [
-        {
-          "id": "code-reviewer",
-          "name": "代码审查",
-          "path": "code-quality/code-reviewer",
-          "description": "自动代码审查，检查质量和最佳实践"
-        },
-        {
-          "id": "receiving-code-review",
-          "name": "接收审查",
-          "path": "code-quality/receiving-code-review",
-          "description": "处理收到的代码审查反馈"
-        },
-        {
-          "id": "requesting-code-review",
-          "name": "请求审查",
-          "path": "code-quality/requesting-code-review",
-          "description": "向用户请求代码审查"
-        },
-        {
-          "id": "systematic-debugging",
-          "name": "系统调试",
-          "path": "code-quality/systematic-debugging",
-          "description": "系统化调试流程：假设→插桩→复现→分析→修复"
-        },
-        {
-          "id": "test-driven-development",
-          "name": "TDD",
-          "path": "code-quality/test-driven-development",
-          "description": "测试驱动开发流程"
-        },
-        {
-          "id": "verification-before-completion",
-          "name": "完成前验证",
-          "path": "code-quality/verification-before-completion",
-          "description": "在声称完成前运行验证命令确认结果"
-        }
-      ]
-    },
-    {
-      "id": "architecture-design",
-      "name": "架构设计",
-      "path": "architecture-design",
-      "skills": [
-        {
-          "id": "architect-thinking",
-          "name": "架构思维",
-          "path": "architecture-design/architect-thinking",
-          "description": "架构设计思维模式和决策框架"
-        },
-        {
-          "id": "database-design",
-          "name": "数据库设计",
-          "path": "architecture-design/database-design",
-          "description": "数据库选型、Schema 设计、索引优化、迁移策略"
-        },
-        {
-          "id": "ui-ux-pro-max",
-          "name": "UI/UX 设计",
-          "path": "architecture-design/ui-ux-pro-max",
-          "description": "UI/UX 设计系统，支持多框架（React、Vue、Flutter 等）"
-        },
-        {
-          "id": "architecture-analyzer",
-          "name": "架构分析",
-          "path": "architecture-design/architecture-analyzer",
-          "description": "分析项目架构，生成项目画像和架构报告"
-        }
-      ]
-    },
-    {
-      "id": "ai-productivity",
-      "name": "AI 效率",
-      "path": "ai-productivity",
-      "skills": [
-        {
-          "id": "ai-frontier-observer",
-          "name": "AI 前沿观察",
-          "path": "ai-productivity/ai-frontier-observer",
-          "description": "追踪 AI 领域最新进展和趋势"
-        },
-        {
-          "id": "ai-native-entrepreneurship",
-          "name": "AI 原生创业",
-          "path": "ai-productivity/ai-native-entrepreneurship",
-          "description": "AI 原生创业方法论和策略"
-        },
-        {
-          "id": "humanizer-zh",
-          "name": "中文人性化",
-          "path": "ai-productivity/humanizer-zh",
-          "description": "去除 AI 生成痕迹，使中文文本更自然"
-        },
-        {
-          "id": "using-superpowers",
-          "name": "超级能力",
-          "path": "ai-productivity/using-superpowers",
-          "description": "使用 Codex、Copilot、Gemini 等 AI 工具的高级技巧"
-        },
-        {
-          "id": "writing-skills",
-          "name": "写作技巧",
-          "path": "ai-productivity/writing-skills",
-          "description": "写作技能和说服力原则"
-        }
-      ]
-    },
-    {
-      "id": "dev-tools",
-      "name": "开发工具",
-      "path": "dev-tools",
-      "skills": [
-        {
-          "id": "baoyu-electron-extract",
-          "name": "Electron 提取",
-          "path": "dev-tools/baoyu-electron-extract",
-          "description": "从 Electron 应用中提取资源"
-        },
-        {
-          "id": "chrome-cdp-live-browser",
-          "name": "Chrome CDP",
-          "path": "dev-tools/chrome-cdp-live-browser",
-          "description": "通过 Chrome DevTools Protocol 控制浏览器"
-        },
-        {
-          "id": "frontend-design",
-          "name": "前端设计",
-          "path": "dev-tools/frontend-design",
-          "description": "前端设计技能和最佳实践"
-        },
-        {
-          "id": "using-git-worktrees",
-          "name": "Git Worktrees",
-          "path": "dev-tools/using-git-worktrees",
-          "description": "使用 Git Worktrees 进行隔离开发"
         }
       ]
     }
