@@ -1,0 +1,43 @@
+{
+  "_comment": "本机配置模板。复制为 toolbox-local.json（已被 .gitignore 忽略，不提交），填入你这台机器的真实路径。Windows / macOS 各写一份。路径任意，不必是 dev/project，也不必与 toolbox 平级；ob-wiki catalog 的相对链接前缀留空即自动计算。",
+  "ob_wiki": "/abs/path/to/your/ob-wiki",
+  "ob_wiki_link_prefix": "",
+  "use_dist": false,
+  "tools": {
+    "workbuddy": {
+      "skills_dir": "C:/Users/Administrator/.workbuddy/skills",
+      "mcp_config": "C:/Users/Administrator/.workbuddy/mcp.json",
+      "mcp_symlink": true
+    },
+    "claudecode": {
+      "skills_dir": "C:/Users/Administrator/.claude/skills",
+      "mcp_config": "C:/Users/Administrator/.claude.json",
+      "mcp_symlink": false
+    },
+    "cursor": {
+      "skills_dir": "C:/Users/Administrator/.cursor/skills",
+      "mcp_config": "C:/Users/Administrator/.cursor/mcp.json",
+      "mcp_symlink": true
+    },
+    "windsurf": {
+      "skills_dir": "C:/Users/Administrator/.windsurf/skills",
+      "mcp_config": "C:/Users/Administrator/.windsurf/mcp.json",
+      "mcp_symlink": true
+    },
+    "trae": {
+      "skills_dir": "C:/Users/Administrator/.trae/skills",
+      "mcp_config": "C:/Users/Administrator/.trae/mcp.json",
+      "mcp_symlink": true
+    },
+    "atomcode": {
+      "skills_dir": "C:/Users/Administrator/.atomcode/skills",
+      "mcp_config": "C:/Users/Administrator/.atomcode/mcp.json",
+      "mcp_symlink": true
+    },
+    "codex": {
+      "skills_dir": "C:/Users/Administrator/.agents/skills",
+      "mcp_config": "C:/Users/Administrator/.agents/mcp.json",
+      "mcp_symlink": true
+    }
+  }
+}

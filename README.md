@@ -244,4 +244,141 @@ skills/
 - `SKILL.md` - 技能主文档
 - `references/` - 参考资料（可选）
 - `scripts/` - 脚本文件（可选）
+
+## `install_skills.py` — 安装技能到项目或 AI 工具
+
+> 一键将 toolbox 的技能**平铺**安装到目标位置（去除分类层级），兼容主流 AI 编程工具。
+
+支持两种安装模式：
+
+| 模式 | 用途 | 典型命令 |
+|------|------|---------|
+| **项目安装** | 安装到某项目的本地目录 | `--target <项目目录>` |
+| **全局安装** | 安装到 AI 工具的全局 skills 目录 | `--to <工具ID>` 或 `--global` |
+
+### 支持的 AI 编程工具
+
+| 工具 | ID | 类型 | 全局 Skills 目录 |
+|------|----|------|-----------------|
+| **Claude Code** | `claudecode` | 终端 CLI | `~/.claude/skills/` |
+| **Cursor** | `cursor` | IDE 客户端 + CLI | `~/.cursor/skills/` |
+| **Workbuddy** | `workbuddy` | 终端 CLI | `~/.workbuddy/skills/` |
+| **Windsurf** | `windsurf` | IDE 客户端 | `~/.windsurf/skills/` |
+| **Trae** | `trae` | IDE 客户端 | `~/.trae/skills/` |
+| **AtomCode** | `atomcode` | 终端 CLI | `~/.atomcode/skills/` |
+| **Codex CLI** | `codex` | 终端 CLI | `~/.agents/skills/` |
+
+> 查看本机工具检测状态：`python install_skills.py --list-tools`
+
+### 项目安装
+
+安装到指定项目的 `skills/` 目录（平铺）：
+
+```bash
+python install_skills.py --target /path/to/your-project --common
+```
+
+安装后目标项目结构：
+
+```
+your-project/
+├── skills/            ← 默认目录名，可通过 --dir 修改
+│   ├── code-reviewer/
+│   ├── systematic-debugging/
+│   ├── brainstorming/
+│   ├── executing-plans/
+│   ├── …              ← 平铺放置，无分类层级
+```
+
+### 全局安装（推荐）
+
+安装到 AI 工具的全局 skills 目录，一键启用：
+
+```bash
+# 安装到指定工具
+python install_skills.py --to claude --common
+
+# 自动检测本机已安装的工具
+python install_skills.py --global --common
+
+# 安装全部技能到 Cursor
+python install_skills.py --to cursor --all
+```
+
+### 完整选项
+
+| 选项 | 说明 |
+|------|------|
+| `--target <path>` / `-t` | 目标项目目录（默认：当前目录） |
+| `--dir <name>` / `-d` | 目标目录名，仅项目模式有效（默认：`skills`） |
+| `--to <tool>` | **全局安装**到指定 AI 工具 |
+| `--global` / `-g` | **全局安装**，自动检测已安装的 AI 工具 |
+| `--common` | 安装常用技能（14 个核心开发技能） |
+| `--category <id>` / `-c` | 只安装指定分类（如 `code-quality`） |
+| `--skills <id1,id2>` / `-s` | 只安装指定技能（逗号分隔） |
+| `--interactive` / `-i` | 交互式选择技能 |
+| `--list` / `-l` | 列出所有可用技能 |
+| `--list-tools` | 列出支持的 AI 工具及检测状态 |
+| `--force` / `-f` | 覆盖已有目录 |
+| `--dry-run` / `-n` | 预览操作，不实际复制 |
+
+### 典型用法
+
+```bash
+# ── 信息 ──
+python install_skills.py --list                 # 列出所有技能
+python install_skills.py --list-tools           # 列出 AI 工具
+
+# ── 全局安装（新项目初始化，推荐）──
+python install_skills.py --to claude --common   # Claude Code 装常用技能
+python install_skills.py --to cursor --all      # Cursor 装全部技能
+python install_skills.py --global -i            # 自动检测 + 交互选技能
+
+# ── 项目安装 ──
+python install_skills.py -t ../my-project --common
+python install_skills.py -t ../my-project -c code-quality   # 仅代码质量
+python install_skills.py -t ../my-project -s code-reviewer,systematic-debugging
+
+# ── 预览 ──
+python install_skills.py --to claude --common -n   # 先看会装什么
+```
+
+### 运行位置
+
+脚本可以从**任意位置**运行：
+
+- 在 toolbox 仓库内运行 → 自动定位
+- 设置 `TOOLBOX_PATH` 环境变量 → 指向 toolbox 目录
+- 通过 alias 或复制到 `PATH` 中 → 全局可用
+
+### 远程一键安装（无需克隆仓库）
+
+不需要先克隆 toolbox 仓库，在任意项目的终端直接执行：
+
+**Windows（PowerShell）：**
+```powershell
+# 默认安装常用技能到当前项目
+irm https://raw.atomgit.com/atomgit_atomcode/atomcode/raw/main/scripts/install.ps1 | iex
+
+# 安装到指定 AI 工具
+iex "& { $(irm https://raw.atomgit.com/atomgit_atomcode/atomcode/raw/main/scripts/install.ps1) } -To claude -Common"
+
+# 干跑预览
+iex "& { $(irm https://raw.atomgit.com/atomgit_atomcode/atomcode/raw/main/scripts/install.ps1) } -DryRun"
+```
+
+**macOS / Linux：**
+```bash
+# 默认安装常用技能到当前项目
+curl -fsSL https://raw.atomgit.com/atomgit_atomcode/atomcode/raw/main/scripts/install.sh | bash
+
+# 安装到指定 AI 工具
+curl -fsSL https://raw.atomgit.com/atomgit_atomcode/atomcode/raw/main/scripts/install.sh | bash -s -- --to claude --common
+
+# 干跑预览
+curl -fsSL https://raw.atomgit.com/atomgit_atomcode/atomcode/raw/main/scripts/install.sh | bash -s -- -n
+```
+
+**原理：** 包装脚本会自动下载 toolbox 到缓存目录（Windows `%TEMP%\toolbox\` / macOS Linux `~/.cache/toolbox/`），
+执行 `install_skills.py` 完成安装。再次运行时自动 `git pull` 更新。可通过 `TOOLBOX_REPO` 环境变量自定义仓库地址。
 <!-- HANDWRITTEN-END -->

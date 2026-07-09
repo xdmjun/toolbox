@@ -1,0 +1,23 @@
+{
+  "_comment": "toolbox 的 MCP 单一真源（标准 mcpServers 格式，Claude Code / Cursor / WorkBuddy 兼容）。各工具的 mcp 配置从本文件同步，改一处全局生效。在此添加你的 MCP server 定义，字段说明：command=启动命令, args=参数, env=环境变量(可用 ${VAR} 引用系统变量)。所有路径通过环境变量注入，不写死绝对路径。",
+  "mcpServers": {
+    "tapd": {
+      "command": "npx",
+      "args": ["-y", "@your-org/tapd-mcp-server"],
+      "env": {}
+    },
+    "gitlab": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-gitlab"],
+      "env": {
+        "GITLAB_TOKEN": "${GITLAB_TOKEN}",
+        "GITLAB_URL": "${GITLAB_URL}"
+      }
+    },
+    "filesystem": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "${PROJECTS_DIR}"],
+      "env": {}
+    }
+  }
+}

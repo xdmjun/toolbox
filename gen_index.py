@@ -16,7 +16,9 @@ gen_index.py — 从 SKILL.md frontmatter 自动重建 toolbox 索引，消灭�
     2. README.md                         仓库根，GitHub 浏览（人类向）
     3. skills/<cat>/README.md            分类说明（自动列表 + 手写“归类逻辑”块）
     4. Skills-Catalog.md                 toolbox 根，agent 总电话簿
-    5. <ob-wiki>/mocs/Skills-Catalog.md  镜像到知识库（--ob-wiki，默认 ../ob-wiki）
+    5. <ob-wiki>/mocs/Skills-Catalog.md  镜像到知识库（读 toolbox-local.json 的 ob_wiki，
+       或 --ob-wiki 覆盖；无配置时回退到 ../ob-wiki（与 toolbox 平级），
+       但 ob-wiki 可放任意位置，用本机配置的 ob_wiki 字段覆盖即可）
 
 手写块策略：
     每个生成文件用 <!-- AUTO-GENERATED-START/END --> 包裹自动内容，
@@ -34,7 +36,8 @@ gen_index.py — 从 SKILL.md frontmatter 自动重建 toolbox 索引，消灭�
     python gen_index.py                 # 生成全部
     python gen_index.py --check         # 仅打印与现有 manifest 的差异，不写文件
     python gen_index.py --no-obwiki     # 不镜像到 ob-wiki
-    python gen_index.py --ob-wiki E:/dev/project/ob-wiki
+    python gen_index.py --ob-wiki ~/code/ob-wiki   # 任意位置，按需指定
+    # 更省事：在 toolbox-local.json 写 "ob_wiki"，之后直接 `python gen_index.py`
 """
 import os
 import re
@@ -46,7 +49,26 @@ import argparse
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 SKILLS_DIR = os.path.join(SCRIPT_DIR, "skills")
 MANIFEST_PATH = os.path.join(SKILLS_DIR, "skills-manifest.json")
-DEFAULT_OBWIKI = os.path.normpath(os.path.join(SCRIPT_DIR, "..", "ob-wiki"))
+def load_local_config():
+    """读取本机配置 toolbox-local.json（不进 git，记录本机路径）。
+
+    这样跨设备（Win/Mac）时，每台机器写一份自己的 toolbox-local.json 即可，
+    脚本无需任何命令行参数就能找到本机的 ob-wiki 与接入目标。
+    """
+    p = os.path.join(SCRIPT_DIR, "toolbox-local.json")
+    if os.path.isfile(p):
+        try:
+            with open(p, encoding="utf-8") as f:
+                return json.load(f)
+        except Exception:
+            return {}
+    return {}
+
+LOCAL_CFG = load_local_config()
+# ob-wiki 路径：本机配置(ob_wiki) > 默认 ../ob-wiki（回退值，可平级可不平级）
+DEFAULT_OBWIKI = LOCAL_CFG.get("ob_wiki") or os.path.normpath(os.path.join(SCRIPT_DIR, "..", "ob-wiki"))
+# ob-wiki catalog 里指向 toolbox/skills 的相对前缀（None 时自动计算，不依赖平级）
+DEFAULT_OBWIKI_LINK = LOCAL_CFG.get("ob_wiki_link_prefix")  # None 时由 gen_index 自动计算（不依赖平级）
 
 # 分类中文名（fallback；若 skills/<cat>/README.md 有 frontmatter title 则优先用那个）
 CATEGORY_NAMES = {
@@ -422,7 +444,8 @@ def main():
     ap = argparse.ArgumentParser(description="从 SKILL.md frontmatter 自动重建 toolbox 索引")
     ap.add_argument("--check", action="store_true", help="仅检查差异，不写文件")
     ap.add_argument("--no-obwiki", action="store_true", help="不镜像到 ob-wiki")
-    ap.add_argument("--ob-wiki", default=DEFAULT_OBWIKI, help="ob-wiki 仓库路径")
+    ap.add_argument("--ob-wiki", default=DEFAULT_OBWIKI, help="ob-wiki 仓库路径（或用 toolbox-local.json 的 ob_wiki）")
+    ap.add_argument("--ob-wiki-link", default=DEFAULT_OBWIKI_LINK, help="ob-wiki catalog 里指向 toolbox 的相对前缀（留空则自动计算，无需平级）")
     args = ap.parse_args()
 
     today = datetime.date.today().isoformat()
@@ -496,7 +519,13 @@ def main():
         ob = args.ob_wiki
         ob_mocs = os.path.join(ob, "mocs")
         if os.path.isdir(ob_mocs):
-            link_prefix = "../../toolbox/"
+            if args.ob_wiki_link:
+                link_prefix = args.ob_wiki_link
+            else:
+                # 自动计算 ob-wiki/mocs -> toolbox 根的相对路径，彻底不依赖平级假设
+                link_prefix = os.path.relpath(SCRIPT_DIR, ob_mocs).replace(os.sep, "/")
+                if not link_prefix.endswith("/"):
+                    link_prefix += "/"
             cat_wiki = render_catalog(cats, today, link_prefix=link_prefix, with_frontmatter=True)
             write_if_changed(os.path.join(ob_mocs, "Skills-Catalog.md"), cat_wiki, dry)
         else:
