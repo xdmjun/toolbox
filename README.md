@@ -124,6 +124,7 @@
 ## 目录结构
 
 ```
+├── ai-coding-tools/             # AI 编程工具配置 (AtomCode / Cursor / Claude Code …)
 skills/
 ├── visual-creation/             # 视觉创作 (8个)
 ├── content-processing/          # 内容处理 (4个)
@@ -133,10 +134,36 @@ skills/
 ├── code-quality/                # 代码质量 (6个)
 ├── architecture-design/         # 架构设计 (4个)
 ├── ai-productivity/             # AI 效率 (6个)
-├── dev-tools/                   # 开发工具 (3个)
+├── dev-tools/                   # 开发工具 (4个)
 ├── skills-manifest.json         # 技能清单
 └── skills-lock.json             # 技能锁文件
 ```
+
+## ai-coding-tools — AI 编程工具配置
+
+> 各 AI 编程工具（CLI / 桌面端）的规则、钩子、环境初始化脚本合集。
+> 每个工具独立子目录，当前包含：
+
+### atomcode-rules — AtomCode 环境初始化
+
+一键部署 AtomCode 的 Bug 处理强制工作流 + pre_tool_use 钩子拦截体系。
+跨平台：macOS / Linux / Windows (Git Bash)
+
+**包含：**
+- `setup-atomcode-rules.sh` — 一键初始化脚本（生成 ATOMCODE.md、hooks.json、3 个钩子脚本）
+- `SOP.md` — 部署说明 + 架构解读 + 故障处理
+- `hooks.json` — 3 个 pre_tool_use 钩子注册配置（知识库检查 / 危险命令拦截）
+- `flag-searcher.sh` — 检测到 search_vault 调用时自动创建标记文件
+- `knowledge-enforcer.sh` — 改代码前检查标记文件，未查知识库则 BLOCK
+- `danger-guard.sh` — 拦截 rm -rf、git reset --hard 等危险命令
+
+**在新机器上部署：**
+```bash
+bash ai-coding-tools/atomcode-rules/setup-atomcode-rules.sh
+# 然后重启 AtomCode 生效
+```
+
+详见 [ai-coding-tools/atomcode-rules/SOP.md](ai-coding-tools/atomcode-rules/SOP.md)。
 
 ## 技能分类详情
 

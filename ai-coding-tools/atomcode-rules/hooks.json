@@ -1,0 +1,22 @@
+{
+  "hooks": {
+    "knowledge-flag-search": {
+      "event": "pre_tool_use",
+      "matcher": "mcp__dao-distill-mcp__search_vault|mcp__dao-distill-mcp__read_note|mcp__dao-distill-mcp__vault_structure",
+      "command": "bash \"$HOME/.atomcode/hooks/flag-searcher.sh\"",
+      "timeout_ms": 1000
+    },
+    "knowledge-check-before-write": {
+      "event": "pre_tool_use",
+      "matcher": "edit_file|write_file",
+      "command": "bash \"$HOME/.atomcode/hooks/knowledge-enforcer.sh\"",
+      "timeout_ms": 5000
+    },
+    "dangerous-command-guard": {
+      "event": "pre_tool_use",
+      "matcher": "bash",
+      "command": "bash \"$HOME/.atomcode/hooks/danger-guard.sh\"",
+      "timeout_ms": 3000
+    }
+  }
+}
