@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
-  "updated": "2026-07-09",
-  "totalSkills": 48,
+  "updated": "2026-08-17",
+  "totalSkills": 49,
   "categories": [
     {
       "id": "ai-productivity",
@@ -82,6 +82,12 @@
       "name": "代码质量",
       "path": "code-quality",
       "skills": [
+        {
+          "id": "change-safety-assessment",
+          "name": "change-safety-assessment",
+          "path": "code-quality/change-safety-assessment",
+          "description": "评估系统功能修改变更是否安全的分级判定技能。Use when the user asks whe…"
+        },
         {
           "id": "code-reviewer",
           "name": "代码审查",

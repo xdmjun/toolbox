@@ -1,7 +1,7 @@
 <!-- AUTO-GENERATED-START -->
 # Toolbox · AI Skills 仓库
 
-> 自动生成于 2026-07-09 · 共 **48** 个技能 / **9** 个分类。
+> 自动生成于 2026-08-17 · 共 **49** 个技能 / **9** 个分类。
 > 本文件目录部分为自动生成（AUTO 块），下方介绍为手写，请勿在 AUTO 块内手改。
 
 ## 分类索引
@@ -10,7 +10,7 @@
 |------|--------|--------|
 | [ai-productivity](skills/ai-productivity/README.md) | AI 效率 | 6 |
 | [architecture-design](skills/architecture-design/README.md) | 架构设计 | 4 |
-| [code-quality](skills/code-quality/README.md) | 代码质量 | 6 |
+| [code-quality](skills/code-quality/README.md) | 代码质量 | 7 |
 | [content-processing](skills/content-processing/README.md) | 内容处理 | 4 |
 | [dev-tools](skills/dev-tools/README.md) | 开发工具 | 4 |
 | [development-workflow](skills/development-workflow/README.md) | 开发流程 | 8 |
@@ -44,6 +44,7 @@
 
 | 技能 | 中文名 | 说明 |
 |------|--------|------|
+| [change-safety-assessment](skills/code-quality/change-safety-assessment/SKILL.md) | change-safety-assessment | 评估系统功能修改变更是否安全的分级判定技能。Use when the user … |
 | [code-reviewer](skills/code-quality/code-reviewer/SKILL.md) | 代码审查 | Use this skill to review code. It suppor… |
 | [receiving-code-review](skills/code-quality/receiving-code-review/SKILL.md) | 接收审查 | Use when receiving code review feedback,… |
 | [requesting-code-review](skills/code-quality/requesting-code-review/SKILL.md) | 请求审查 | Use when completing tasks, implementing … |

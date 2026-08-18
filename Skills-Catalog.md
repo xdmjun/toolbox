@@ -1,7 +1,7 @@
 <!-- AUTO-GENERATED-START -->
 # Skills Catalog（技能总索引）
 
-> 自动生成于 2026-07-09 · 共 **48** 个技能 / **9** 个分类。
+> 自动生成于 2026-08-17 · 共 **49** 个技能 / **9** 个分类。
 > 本文件由 `gen_index.py` 生成，**请勿手改**；归类逻辑请写到各 `skills/<cat>/README.md`。
 > 这是 agent 的“电话簿”：开发时按场景匹配技能，再读对应 SKILL.md。
 
@@ -37,6 +37,7 @@
 
 ### 代码质量（`code-quality`）
 
+- [change-safety-assessment](skills/code-quality/change-safety-assessment/SKILL.md) — change-safety-assessment
 - [code-reviewer](skills/code-quality/code-reviewer/SKILL.md) — 代码审查
 - [receiving-code-review](skills/code-quality/receiving-code-review/SKILL.md) — 接收审查
 - [requesting-code-review](skills/code-quality/requesting-code-review/SKILL.md) — 请求审查
