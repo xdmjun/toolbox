@@ -147,16 +147,17 @@ skills/
 
 ### atomcode-rules — AtomCode 环境初始化
 
-一键部署 AtomCode 的 Bug 处理强制工作流 + pre_tool_use 钩子拦截体系。
-跨平台：macOS / Linux / Windows (Git Bash)
+一键部署 AtomCode 的全局规则 + harness 钩子体系（单入口 hook.js）。
+跨平台：macOS / Linux / Windows (Git Bash)，依赖 Node.js >= 18
 
 **包含：**
-- `setup-atomcode-rules.sh` — 一键初始化脚本（生成 ATOMCODE.md、hooks.json、3 个钩子脚本）
+- `setup-atomcode-rules.sh` — 一键初始化脚本（写 ATOMCODE.md，复制 hooks.json / hook.js，生成 3 个 bash 钩子并校验语法）
+- `hook.js` — harness 主钩子（单入口处理 pre/post_tool_use、session_start/end：危险命令拦截 / 锁文件保护 / 先读后改 / 会话跟踪，fail-open 兜底）
+- `hooks.json` — 6 条钩子注册（harness 主钩子 + 知识库三件套）
 - `SOP.md` — 部署说明 + 架构解读 + 故障处理
-- `hooks.json` — 3 个 pre_tool_use 钩子注册配置（知识库检查 / 危险命令拦截）
 - `flag-searcher.sh` — 检测到 search_vault 调用时自动创建标记文件
 - `knowledge-enforcer.sh` — 改代码前检查标记文件，未查知识库则 BLOCK
-- `danger-guard.sh` — 拦截 rm -rf、git reset --hard 等危险命令
+- `danger-guard.sh` — bash 模式兜底拦截（无 node 环境时仍生效）
 
 **在新机器上部署：**
 ```bash

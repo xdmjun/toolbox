@@ -1,22 +1,54 @@
 {
   "hooks": {
-    "knowledge-flag-search": {
-      "event": "pre_tool_use",
-      "matcher": "mcp__dao-distill-mcp__search_vault|mcp__dao-distill-mcp__read_note|mcp__dao-distill-mcp__vault_structure",
-      "command": "bash \"$HOME/.atomcode/hooks/flag-searcher.sh\"",
-      "timeout_ms": 1000
-    },
-    "knowledge-check-before-write": {
-      "event": "pre_tool_use",
-      "matcher": "edit_file|write_file",
-      "command": "bash \"$HOME/.atomcode/hooks/knowledge-enforcer.sh\"",
-      "timeout_ms": 5000
-    },
     "dangerous-command-guard": {
       "event": "pre_tool_use",
       "matcher": "bash",
-      "command": "bash \"$HOME/.atomcode/hooks/danger-guard.sh\"",
+      "command": "bash ~/.atomcode/hooks/danger-guard.sh",
       "timeout_ms": 3000
+    },
+    "guard-pre-tool": {
+      "event": "pre_tool_use",
+      "command": "node \"$HOME/.atomcode/hooks/hook.js\"",
+      "timeout_ms": 8000
+    },
+    "track-reads-read_file": {
+      "event": "post_tool_use",
+      "matcher": "read_file",
+      "command": "node \"$HOME/.atomcode/hooks/hook.js\"",
+      "timeout_ms": 5000
+    },
+    "track-reads-read_symbol": {
+      "event": "post_tool_use",
+      "matcher": "read_symbol",
+      "command": "node \"$HOME/.atomcode/hooks/hook.js\"",
+      "timeout_ms": 5000
+    },
+    "track-reads-list_symbols": {
+      "event": "post_tool_use",
+      "matcher": "list_symbols",
+      "command": "node \"$HOME/.atomcode/hooks/hook.js\"",
+      "timeout_ms": 5000
+    },
+    "track-reads-write_file": {
+      "event": "post_tool_use",
+      "matcher": "write_file",
+      "command": "node \"$HOME/.atomcode/hooks/hook.js\"",
+      "timeout_ms": 5000
+    },
+    "evidence-guard-prompt": {
+      "event": "user_prompt_submit",
+      "command": "node \"$HOME/.atomcode/hooks/evidence-guard.js\"",
+      "timeout_ms": 3000
+    },
+    "session-start-context": {
+      "event": "session_start",
+      "command": "node \"$HOME/.atomcode/hooks/hook.js\"",
+      "timeout_ms": 8000
+    },
+    "session-end-log": {
+      "event": "session_end",
+      "command": "node \"$HOME/.atomcode/hooks/hook.js\"",
+      "timeout_ms": 8000
     }
   }
 }
