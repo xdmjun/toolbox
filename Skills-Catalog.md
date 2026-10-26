@@ -1,7 +1,7 @@
 <!-- AUTO-GENERATED-START -->
 # Skills Catalog（技能总索引）
 
-> 自动生成于 2026-08-17 · 共 **49** 个技能 / **9** 个分类。
+> 自动生成于 2026-10-26 · 共 **50** 个技能 / **9** 个分类。
 > 本文件由 `gen_index.py` 生成，**请勿手改**；归类逻辑请写到各 `skills/<cat>/README.md`。
 > 这是 agent 的“电话簿”：开发时按场景匹配技能，再读对应 SKILL.md。
 
@@ -57,6 +57,7 @@
 - [baoyu-electron-extract](skills/dev-tools/baoyu-electron-extract/SKILL.md) — Electron 提取
 - [chrome-cdp-live-browser](skills/dev-tools/chrome-cdp-live-browser/SKILL.md) — Chrome CDP
 - [frontend-design](skills/dev-tools/frontend-design/SKILL.md) — 前端设计
+- [jev-router](skills/dev-tools/jev-router/SKILL.md) — jev-router
 - [using-git-worktrees](skills/dev-tools/using-git-worktrees/SKILL.md) — Git Worktrees
 
 ### 开发流程（`development-workflow`）

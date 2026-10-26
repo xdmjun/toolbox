@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
-  "updated": "2026-08-17",
-  "totalSkills": 49,
+  "updated": "2026-10-26",
+  "totalSkills": 50,
   "categories": [
     {
       "id": "ai-productivity",
@@ -179,6 +179,12 @@
           "name": "前端设计",
           "path": "dev-tools/frontend-design",
           "description": "前端设计技能和最佳实践"
+        },
+        {
+          "id": "jev-router",
+          "name": "jev-router",
+          "path": "dev-tools/jev-router",
+          "description": "Use when making routing decisions in the agent l…"
         },
         {
           "id": "using-git-worktrees",

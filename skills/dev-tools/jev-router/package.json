@@ -1,0 +1,11 @@
+{
+  "name": "jev-router",
+  "version": "0.1.0",
+  "description": "Standalone, zero-dependency JEV decision router for coding agents — skill routing, knowledge-base trigger, web-research gating with confidence tiers",
+  "type": "module",
+  "main": "src/index.js",
+  "bin": { "jev-route": "./src/cli.js" },
+  "engines": { "node": ">=18" },
+  "license": "MIT",
+  "keywords": ["jev", "typesafe", "agent", "router", "decision"]
+}

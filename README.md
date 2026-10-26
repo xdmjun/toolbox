@@ -1,7 +1,7 @@
 <!-- AUTO-GENERATED-START -->
 # Toolbox · AI Skills 仓库
 
-> 自动生成于 2026-08-17 · 共 **49** 个技能 / **9** 个分类。
+> 自动生成于 2026-10-26 · 共 **50** 个技能 / **9** 个分类。
 > 本文件目录部分为自动生成（AUTO 块），下方介绍为手写，请勿在 AUTO 块内手改。
 
 ## 分类索引
@@ -12,7 +12,7 @@
 | [architecture-design](skills/architecture-design/README.md) | 架构设计 | 4 |
 | [code-quality](skills/code-quality/README.md) | 代码质量 | 7 |
 | [content-processing](skills/content-processing/README.md) | 内容处理 | 4 |
-| [dev-tools](skills/dev-tools/README.md) | 开发工具 | 4 |
+| [dev-tools](skills/dev-tools/README.md) | 开发工具 | 5 |
 | [development-workflow](skills/development-workflow/README.md) | 开发流程 | 8 |
 | [social-publish](skills/social-publish/README.md) | 社交发布 | 4 |
 | [visual-creation](skills/visual-creation/README.md) | 视觉创作 | 8 |
@@ -68,6 +68,7 @@
 | [baoyu-electron-extract](skills/dev-tools/baoyu-electron-extract/SKILL.md) | Electron 提取 | Extracts resources and JavaScript from a… |
 | [chrome-cdp-live-browser](skills/dev-tools/chrome-cdp-live-browser/SKILL.md) | Chrome CDP | Give AI agents access to your live Chrom… |
 | [frontend-design](skills/dev-tools/frontend-design/SKILL.md) | 前端设计 | Guidance for distinctive, intentional vi… |
+| [jev-router](skills/dev-tools/jev-router/SKILL.md) | jev-router | Use when making routing decisions in the… |
 | [using-git-worktrees](skills/dev-tools/using-git-worktrees/SKILL.md) | Git Worktrees | Use when starting feature work that need… |
 
 ### 开发流程（`development-workflow`）

@@ -1,0 +1,1 @@
+- toolbox 仓库新增技能的正确流程：技能必须放在 skills/<分类>/<技能名>/（两层结构，分类如 dev-tools），然后运行 python gen_index.py 自动重建 skills-manifest.json、根 README、分类 README、Skills-Catalog.md；直接放 skills/ 根目录不会被索引收录。
